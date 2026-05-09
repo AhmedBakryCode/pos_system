@@ -59,10 +59,13 @@ class _LoginPageState extends State<LoginPage> {
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
                           Center(
-                            child: SvgPicture.asset(
-                              'assets/images/app_logo.svg',
-                              width: 92,
-                              height: 92,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(20),
+                              child: Image.asset(
+                                'assets/images/app_logo.png',
+                                width: 92,
+                                height: 92,
+                              ),
                             ),
                           ),
                           const SizedBox(height: 20),

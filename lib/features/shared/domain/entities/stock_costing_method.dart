@@ -1,0 +1,4 @@
+enum StockCostingMethod {
+  fifo,
+  weightedAverage,
+}
